@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+body
+{
+	font-family: 'Poppins', sans-serif;
+    background-color: #154360;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+
+.container
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #AED6F1;
+	padding: 30px 30px;
+	margin: 50px;
+	border-radius: 20px;
+	box-shadow: 10px 5px 5px #071A27;
+	transition: 0.6s ease-out;
+	overflow: hidden;
+}
+
+.search-box
+{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.search-box input
+{
+	color: #071A27;
+	width: 80%;
+	font-size: 20px;
+	border: solid #21618C  2px;
+	border-radius: 5px;
+	text-transform: uppercase;
+	padding-left: 10px;
+}
+
+.search-box input::placeholder
+{
+	font-size: 18px;
+	font-weight: 200;
+	text-transform: capitalize;
+}
+
+.search-box button
+{
+	cursor: pointer;
+	width: 40px;
+	height: 40px;
+	color: white;
+	border-radius: 50%;
+	border: none;
+	font-size: 20px;
+	background-color: #071A27;
+	transition: 0.4s ease-out;
+}
+
+.search-box button:hover
+{
+	color: #071A27;
+	background-color: white;
+}
+
+.search-box i
+{
+	font-size: 30px;
+	color: #E74C3C;
+	padding-right: 10px;
+}
+
+.weather-box
+{
+	text-align: center;
+}
+
+.weather-box img
+{
+	width: 80%;
+	margin-top: 20px;
+}
+
+.weather-box p
+{
+	font-size: 1.4rem;
+	color: #071A27;
+	font-weight: 400;
+	margin: 0;
+}
+
+.weather-details
+{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+.weather-details .humidity, .weather-details .wind
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+	height: 100px;
+	font-size: 20px;
+}
+
+.weather-details .humidity
+{
+	padding-left: 20px;
+}
+
+.weather-details .wind
+{
+	padding-left: 10px;
+}
+
+.weather-details i
+{
+	padding-right: 20px;
+	color:#071A27;
+	font-size: 35px;
+}
+
+.weather-details span
+{
+	padding-right: 20px;
+	color:#071A27;
+	font-size: 15px;
+}
+
+.weather-details .text
+{
+	padding-right: 20px;
+	color:#071A27;
+	font-size: 15px;
+}
+
+.weather-details .text p
+{
+	margin : 0;
+}
+
+.not-found
+{
+	width: 100%;
+	text-align: center;
+	font-size: 25px;
+	margin-top: 50px;
+}
+
+.not-found img
+{
+	width: 50%;
+	border-radius: 50%;
+}
+
+.not-found p
+{
+	color: #071A27;
+	font-size: 22px;
+	font-weight: 200;
+	margin-top: 12px;
+}

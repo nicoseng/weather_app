@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="search-box">
+            <i class="fa-solid fa-location-dot"></i>
+            <form action="{{ url_for('search')}}" method="POST" id="questionForm" class="form container-fluid">
+                <input type="text" id="city_name" name="city_name" placeholder="Nom d'une ville..." size="100" maxlength="1000" class="col-sm-12 col-md-12 col-lg-12 mt-3 text-center"> 
+                <button class="fa-solid fa-magnifying-glass" type="submit"></button>
+            </form>
+
+        </div>
+        {% if city_data %}
+        <div class="weather-box">
+            <img src="{{city_data.weather_icon}}" alt="{{city_data.weather_icon}}">
+            <p class="description">{{city_data.description.capitalize()}}</p>
+            <p class="city_name">{{city_data.city_name}}</p>
+            <p class="country">{{city_data.country}}</p>
+            <p class="temperature">{{city_data.temperature}}°C</p>
+        </div>
+        
+        <div class="weather-details">
+            <div class="humidity">
+                <i class="fa-solid fa-water"></i>
+                <div class="text">
+                    <span>{{city_data.humidity}} %</span>
+                    <p>Humidité</p>
+                </div>
+            </div>
+            <div class="wind">
+                <i class="fa-solid fa-wind"></i>
+                <div class="text">
+                    <span>{{city_data.wind_speed}} km/h</span>
+                    <p>Vent</p>
+                </div>
+            </div>
+        </div>
+        {% elif empty_message %}
+        <div class="not-found">
+            <img src="{{url_for('static', filename='images/404.jpg')}}">
+            <p>{{ empty_message }} </p>
+        </div>
+        <!-- <div class="not-found">
+            <img src="{{url_for('static', filename='images/404.jpg')}}">
+            <p>{{ error_message }} </p>
+        </div> -->
+        {% endif %}
+    </div>
+
+    <script>
+		const menuBtn = document.querySelector(".menu-btn")
+        const navigation = document.querySelector(".navigation")
+		const closeBtn = document.querySelector(".close-btn")
+        const subMenuBox = document.querySelector(".sub-menu")
+
+        menuBtn.addEventListener('click',()=>{
+        navigation.classList.toggle('mobile-menu')
+        closeBtn.classList.toggle('active')
+
+        })
+
+        closeBtn.addEventListener('click',()=>{
+        navigation.classList.remove('mobile-menu')
+        closeBtn.classList.remove('active')
+
+        })
+
+        function toggleSubMenu(){
+            subMenuBox.classList.toggle('open-menu')
+        }
+
+</script>
+
+    <script src="https://kit.fontawesome.com/1cfeef19c9.js" crossorigin="anonymous"></script>    <script src="{{url_for('static', filename='js/index.js')}}"></script>
+</body>
+</html>
