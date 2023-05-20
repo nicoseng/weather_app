@@ -25,18 +25,25 @@ body
 	overflow: hidden;
 }
 
+.container img
+{
+	width: 50%;
+	border-radius: 20px;
+}
+
 .search-box
 {
 	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	text-align: center;
 }
 
 .search-box input
 {
 	color: #071A27;
-	width: 80%;
+	width: 70%;
 	font-size: 20px;
 	border: solid #21618C  2px;
 	border-radius: 5px;
@@ -74,7 +81,8 @@ body
 {
 	font-size: 30px;
 	color: #E74C3C;
-	padding-right: 10px;
+	padding-right: 5px;
+	transform : translate(0, 3px);
 }
 
 .weather-box
@@ -162,7 +170,7 @@ body
 .not-found img
 {
 	width: 50%;
-	border-radius: 50%;
+	border-radius: 20px;
 }
 
 .not-found p
