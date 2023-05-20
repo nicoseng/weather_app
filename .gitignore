@@ -1,3 +1,4 @@
 venv/
 __pycache__/
 ow_api.py
+.gitignore
