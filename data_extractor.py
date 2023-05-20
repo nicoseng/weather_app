@@ -1,6 +1,7 @@
 """Internal imports"""
 
 import requests
+from ow_api import API_KEY
 
 class DataExtractor:
     
@@ -15,7 +16,7 @@ class DataExtractor:
             city_name : type str
                 The name of the location.
         """
-        API_KEY = "41cff84f6508932c0e463284fac046fd"
+
         ow_base_url = "https://api.openweathermap.org/data/2.5/weather?q="
         ow_api_url = ow_base_url + city_name + "&appid=" + API_KEY + "&lang=fr"
         response = requests.get(ow_api_url)
