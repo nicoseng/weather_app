@@ -20,40 +20,41 @@
             </form>
 
         </div>
-        {% if city_data %}
+        {% if response %}
         <div class="weather-box">
-            <img src="{{city_data.weather_icon}}" alt="{{city_data.weather_icon}}">
-            <p class="description">{{city_data.description.capitalize()}}</p>
-            <p class="city_name">{{city_data.city_name}}</p>
-            <p class="country">{{city_data.country}}</p>
-            <p class="temperature">{{city_data.temperature}}°C</p>
+            <img src="{{response.weather_icon}}" alt="{{response.weather_icon}}">
+            <p class="temperature">{{response.temperature}}°C</p>
+            <p class="description">{{response.description.capitalize()}}</p>
+            <p class="city_name">{{response.city_name}}</p>
+            <img class="flag" src="https://flagsapi.com/{{response.country}}/flat/64.png">
+            <p class="country">{{response.country}}</p>
         </div>
         
         <div class="weather-details">
             <div class="humidity">
                 <i class="fa-solid fa-water"></i>
                 <div class="text">
-                    <span>{{city_data.humidity}} %</span>
+                    <span>{{response.humidity}} %</span>
                     <p>Humidité</p>
                 </div>
             </div>
             <div class="wind">
                 <i class="fa-solid fa-wind"></i>
                 <div class="text">
-                    <span>{{city_data.wind_speed}} km/h</span>
+                    <span>{{response.wind_speed}} km/h</span>
                     <p>Vent</p>
                 </div>
             </div>
+        </div>
+        {% elif error_message %}
+        <div class="not-found">
+            <img src="{{url_for('static', filename='images/404.jpg')}}">
+            <p>{{ error_message }}</p>
         </div>
         {% elif empty_message %}
         <div class="not-found">
             <img src="{{url_for('static', filename='images/404.jpg')}}">
             <p>{{ empty_message }}</p>
-        </div>
-        {% else %}
-        <div class="not-found">
-            <img src="{{url_for('static', filename='images/404.jpg')}}">
-            <p>{{ error_message }}</p>
         </div>
         {% endif %}
     </div>

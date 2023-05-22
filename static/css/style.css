@@ -93,7 +93,11 @@ body
 .weather-box img
 {
 	width: 80%;
-	margin-top: 20px;
+}
+
+.weather-box img.flag
+{
+	width: 50%;
 }
 
 .weather-box p
@@ -164,7 +168,7 @@ body
 	width: 100%;
 	text-align: center;
 	font-size: 25px;
-	margin-top: 50px;
+	margin-top: 20px;
 }
 
 .not-found img
