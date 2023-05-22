@@ -9,7 +9,10 @@ body
 	outline: none;
 	box-sizing: border-box;
 }
-
+.logo
+{
+	text-align: center;
+}
 .container
 {
 	display: flex;
@@ -27,7 +30,7 @@ body
 
 .container img
 {
-	width: 50%;
+	width: 20%;
 	border-radius: 20px;
 }
 
@@ -102,7 +105,7 @@ body
 
 .weather-box p
 {
-	font-size: 1.4rem;
+	font-size: 20px;
 	color: #071A27;
 	font-weight: 400;
 	margin: 0;
@@ -125,6 +128,8 @@ body
 	width: 50%;
 	height: 100px;
 	font-size: 20px;
+	font-weight: 400;
+	font-family: 'Poppins', sans-serif;
 }
 
 .weather-details .humidity
@@ -183,4 +188,14 @@ body
 	font-size: 22px;
 	font-weight: 200;
 	margin-top: 12px;
+	font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (max-width: 880px)
+{
+	.container img
+	{
+		width: 35%;
+	}
+
 }
