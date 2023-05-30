@@ -7,6 +7,7 @@ Programme rédigé sous Python3. Projet sous Virtual Env et Git
 
 1.	Installez un environnement virtuel de développement depuis votre terminal. (python3 –m venv env) ;
 2.	Activez l’environnement virtuel en tapant source env/bin/activate. Une mention (env) s’affiche à gauche de votre console.
+3.	Tapez la commande pip install -r requirements.txt
 
 # II°) Configurez votre projet 
 
