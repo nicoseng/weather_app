@@ -11,7 +11,7 @@ Programme rédigé sous Python3. Projet sous Virtual Env et Git
 # II°) Configurez votre projet 
 
 1.	 Rendez-vous sur le site de OPENWEATHERAPP : https://openweathermap.org/.
-2.	 Cliquer dans l'onglet API
+2.	 Cliquer dans l'onglet API et générer votre clé API ;
 3.	 Dans le fichier intitulé app.py, recopiez votre propre clé API à la suite de la variable KEY. Cette clé permet à votre application d'effectuer des requêtes sur OPENWEATHERAPP.
 
 # III°) Démarrez l'application WeatherApp
@@ -23,5 +23,5 @@ Dans le terminal, entrez flask run.
 
 L'application permet à l'utilisateur d'entrer le nom d'une ville ou d'un endroit de son choix afin d'y obtenir :
 
-- la localisation exacte de l'endroit en question affichée sur une carte Google Maps ;
-- une courte histoire du lieu en question raconté par notre fameux grandpyBot.
+- La météo générale de la ville en question ;
+- Le pays correspondant à la ville recherchée.
