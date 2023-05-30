@@ -11,8 +11,15 @@ Programme rédigé sous Python3. Projet sous Virtual Env et Git
 # II°) Configurez votre projet 
 
 1.	 Rendez-vous sur le site de OPENWEATHERAPP : https://openweathermap.org/.
-2.	 Cliquer dans l'onglet API et générer votre clé API ;
-3.	 Dans le fichier intitulé app.py, recopiez votre propre clé API à la suite de la variable KEY. Cette clé permet à votre application d'effectuer des requêtes sur OPENWEATHERAPP.
+2.	 Cliquez dans l'onglet API et générer votre clé API ;
+3.	 Dans Current & Forecast weather data collection, souscrivez à l'abonnement Current Weather Data en cliquant sur le bouton subscribe ;
+4.	 Choissisez la formule FREE en cliquant sur Get API key ;
+5.	 Créez votre compte si besoin ;
+6.	 Cliquez sur l'onglet API keys ;
+7.	 Dans la rubrique Create key, donnez un nom à votre API puis cliquez sur le bouton generate ;
+8.	 Copiez votre clé API ;
+9.	 Dans le fichier inittulé app.py, créez une variable KEY ;
+10.	 Dans le fichier intitulé app.py, collez votre propre clé API à la suite de la variable KEY. Cette clé permet à votre application d'effectuer des requêtes sur OPENWEATHERAPP.
 
 # III°) Démarrez l'application WeatherApp
 
