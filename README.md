@@ -18,8 +18,7 @@ Programme rédigé sous Python3. Projet sous Virtual Env et Git
 6.	 Cliquez sur l'onglet API keys ;
 7.	 Dans la rubrique Create key, donnez un nom à votre API puis cliquez sur le bouton generate ;
 8.	 Copiez votre clé API ;
-9.	 Dans le fichier inittulé app.py, créez une variable KEY ;
-10.	 Dans le fichier intitulé app.py, collez votre propre clé API à la suite de la variable KEY. Cette clé permet à votre application d'effectuer des requêtes sur OPENWEATHERAPP.
+9.	 Dans le fichier intitulé ow_api.py, collez votre propre clé API entre les guillemets. Cette variable KEY permet à votre application d'effectuer des requêtes sur OPENWEATHERAPP.
 
 # III°) Démarrez l'application WeatherApp
 
