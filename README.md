@@ -14,9 +14,9 @@ Programme rédigé sous Python3. Projet sous Virtual Env et Git
 2.	 Cliquer dans l'onglet API
 3.	 Dans le fichier intitulé app.py, recopiez votre propre clé API à la suite de la variable KEY. Cette clé permet à votre application d'effectuer des requêtes sur OPENWEATHERAPP.
 
-# III°) Démarrez l'application GrandPyBot 
+# III°) Démarrez l'application WeatherApp
 
-Dans le terminal, entrez heroku open. Cette commande permet de se connecter à l'adresse URL où est hébergé l'application sur heroku : https://grand-pybot.herokuapp.com/
+Dans le terminal, entrez flask run.
 
 
 # IV°) Utilisez l'application
